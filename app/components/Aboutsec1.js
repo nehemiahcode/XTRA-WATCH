@@ -36,7 +36,7 @@ export default function Aboutsec1() {
           >
             With over 27 years of experience, we have been providing exceptional
             watches services for all kinds, adults, children.. throughout the
-            globe. If you're looking for any type of watch , wrist, digital.
+            globe. If you &apos;re looking for any type of watch , wrist, digital.
             They are all available. We provide FREE estimates if you live in the
             local area for shipping. Call us today to get one from{" "}
             <strong>XTRA WATCH</strong>.

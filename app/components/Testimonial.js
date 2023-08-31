@@ -46,10 +46,10 @@ export default function Testimonial() {
               className=" flex flex-col  relative bg-white px-4  py-6 dark:bg-slate-900 rounded-md shadow-lg w-[95%] xl:w-[40%] lg:w-[45%] md:w-[70%] sm:w-[80%]"
             >
               <blockquote className="text-center  text-md fone-medium py-3 text-gray-800 dark:text-white">
-                "I don't always clop, but when I do, it's because of pear watch.
+              &quot;I don&apos;t always clop, but when I do, it&apos;s because of pear watch.
                 Pear watch has really helped me. I STRONGLY recommend pear watch
                 to EVERYONE interested in fashion &amp; tech! This is simply
-                unbelievable!"
+                unbelievable!&quot;
               </blockquote>
               <span className=" text-sky-500 rounded p-1 active:scale-110 text-xl absolute top-1 right-3">
                 <BsTwitter />
