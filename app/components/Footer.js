@@ -44,7 +44,7 @@ export default function Footer() {
           <Logo />
         </span>
         <Typography
-          style={" font-medium text-gray-800 dark:text-white py-2  text-md"}
+          style={" font-semibold text-gray-800 dark:text-white py-2  text-sm"}
         >
           A smartwatch is a wearable computer in the form of a watch; modern
           smartwatches provide a local touchscreen interface for daily use.

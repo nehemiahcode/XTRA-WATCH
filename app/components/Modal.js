@@ -27,7 +27,7 @@ export default function Modal({ show }) {
         <SkeletonLoader />
       ) : (
         <div className="flex items-center min-h-screen px-4 py-8">
-          <div className="relative w-[95%] md:max-w-lg mx-auto bg-white dark:bg-slate-900 rounded-md shadow-lg">
+          <div className="relative w-[98%] md:max-w-lg mx-auto bg-white dark:bg-slate-900 rounded-md shadow-lg">
             <div className="flex items-center justify-between p-4 border-b">
               <Heading style="text-lg font-medium flex items-center gap-4 dark:text-white text-gray-800">
                 Ooopss
@@ -79,7 +79,7 @@ export default function Modal({ show }) {
 export function SkeletonLoader() {
   return (
     <div className="flex items-center min-h-screen px-4 py-8">
-      <div className="relative py-8 px-4  w-[90%] md:max-w-lg mx-auto bg-white dark:bg-slate-900 rounded-md shadow-lg">
+      <div className="relative py-8 px-4  w-[98%] md:max-w-lg mx-auto bg-white dark:bg-slate-900 rounded-md shadow-lg">
         {/* error message and icon loading effect */}
         <div className="flex justify-between mb-5 items-center">
           <div className=" rounded bg-gray-600 w-[60%] py-5 animate-pulse"></div>

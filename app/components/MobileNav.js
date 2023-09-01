@@ -19,7 +19,7 @@ export default function MobileNav() {
   return (
     <nav
       className={
-        " fixed z-[99] md:hidden bottom-0 bg-white sm:left-[10%]   w-full sm:w-[80%] rounded-t-md sm:px-2   dark:bg-slate-900 shadow-2xl  px-2"
+        " fixed z-[99999] md:hidden bottom-0 bg-white sm:left-[10%]   w-full sm:w-[80%] rounded-t-md sm:px-2   dark:bg-slate-900 shadow-2xl  px-2"
       }
     >
       <div className="flex justify-between items-center px-1 py-1">
