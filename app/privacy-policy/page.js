@@ -19,7 +19,7 @@ export default function Policy() {
           <Typography style={"text-[0.98rem] md:text-base leading-loose "}>
             When you visit the Website our servers automatically record
             information that your browser sends. This data may include
-            information such as your device's IP address, browser type and
+            information such as your device&apos;s IP address, browser type and
             version, operating system type and version, language preferences or
             the webpage you were visiting before you came to our Website, pages
             of our Website that you visit, the time spent on those pages,
