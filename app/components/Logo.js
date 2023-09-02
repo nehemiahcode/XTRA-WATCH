@@ -1,9 +1,11 @@
-import Link from "next/link";
+"use client";
 import { PiWatchFill } from "react-icons/pi";
+import { useRouter } from "next/navigation";
 
 export default function Logo() {
+  const router = useRouter();
   return (
-    <Link prefetch={false} href="/">
+    <span onClick={() => router.push("/")}>
       <div className=" flex items-center gap-1">
         <span className="text-5xl text-black dark:text-white">
           <PiWatchFill />
@@ -12,6 +14,6 @@ export default function Logo() {
           XTRA <span className="  text-base lg:text-xl font-normal">Watch</span>
         </span>
       </div>
-    </Link>
+    </span>
   );
 }

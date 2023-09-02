@@ -2,7 +2,7 @@
 import { FaHome } from "react-icons/fa";
 import { IoMdCall } from "react-icons/io";
 import { HiUsers } from "react-icons/hi";
-import { BsCart3 } from "react-icons/bs";
+import { PiShoppingCartFill } from "react-icons/pi";
 import Ripples from "react-ripples";
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
@@ -14,7 +14,7 @@ export default function MobileNav() {
   const Navigation = [
     { icon: <FaHome />, text: "Home", url: "/" },
     { icon: <HiUsers />, text: "About", url: "/about" },
-    { icon: <BsCart3 />, text: "Store", url: "/store" },
+    { icon: <PiShoppingCartFill />, text: "Store", url: "/store" },
     { icon: <IoMdCall />, text: "Contact", url: "/contact", margin: true },
   ];
   return (
