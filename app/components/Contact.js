@@ -57,7 +57,7 @@ export default function Contacts() {
             <Heading style=" dark:text-white text-gray-800  text-2xl font-bold sm:text-3xl">
               Contact us today
             </Heading>
-            <Typography style="dark:text-white text-gray-800">
+            <Typography style="dark:text-white text-[0.98rem] md:text-base leading-loose md:leading-relaxed text-gray-800">
               Fill in the required fileds below to get in touch.
             </Typography>
           </div>
@@ -134,26 +134,25 @@ export default function Contacts() {
                 type="submit"
                 className="w-full px-4 py-3 cursor-default md:cursor-pointer   text-white font-medium bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-600 rounded-lg duration-150"
               >
-                Subscribe
+                Send Message
               </button>
             </Ripples>
           </form>
         </div>
         {/* {send && (
-          <div> */}
-            {" "}
-            {error &&
-              error.map((e, id) => (
-                <div
-                  key={id}
-                  className={`${
-                    success ? "text-green-500" : "text-red-500"
-                  } text-sm`}
-                >
-                  {e}
-                </div>
-              ))}
-          {/* </div>
+          <div> */}{" "}
+        {error &&
+          error.map((e, id) => (
+            <div
+              key={id}
+              className={`${
+                success ? "text-green-500" : "text-red-500"
+              } text-sm`}
+            >
+              {e}
+            </div>
+          ))}
+        {/* </div>
         )} */}
       </div>
     </main>

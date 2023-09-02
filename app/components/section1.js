@@ -1,7 +1,7 @@
 "use client";
 import Image1 from "@/public/watch-1.png";
 import Image2 from "@/public/watch-2.png";
-import Image3 from "@/public/watch-5.png";
+import Image3 from "@/public/brown-watch.png";
 import Image5 from "@/public/watch-4.png";
 import Image4 from "@/public/custom-watch.png";
 import Image from "next/image";
@@ -13,6 +13,8 @@ import ReactSwipe from "react-swipe";
 import Heading from "./Heading";
 import Spinner from "./Spinner";
 import Typography from "./Typography";
+import { useRouter } from "next/navigation";
+
 export default function Section1() {
   const Images = [
     { alt: "dark wrist watch image.", image: Image1 },
@@ -25,11 +27,16 @@ export default function Section1() {
     { alt: "Watch image picture", image: Image5 },
   ];
   let reactSwipeEl;
+  const router = useRouter();
   return (
     <>
       <section className="  grid grid-cols-1 lg:grid-cols-2 w-full py-10 h-auto px-2 lg:px-10 xl:px-12">
         <div className=" h-auto lg:text-left text-center w-[100%]">
-          <Heading style={" text-4xl font-normal py-3 lg:py-5"}>
+          <Heading
+            style={
+              " text-3xl leading-relaxed md:text-4xl font-bold py-3 lg:py-5"
+            }
+          >
             Skip the impossile
           </Heading>
           <Heading
@@ -37,15 +44,16 @@ export default function Section1() {
           >
             Extraordinery
           </Heading>
-          <Heading style={" text-3xl lg:text-7xl   py-3  font-bold lg:py-4 "}>
+          <Heading style={" text-4xl lg:text-7xl py-3 font-bold lg:py-4 "}>
             Performance
           </Heading>
           <Ripples className=" my-4 rounded-full">
             <button
+              onClick={() => router.push("/about")}
               type="button"
               className=" cursor-default md:cursor-pointer rounded-full bg-blue-600 px-4 py-3 text-center text-white font-medium w-[140px]"
             >
-              More
+              Explore
             </button>
           </Ripples>
         </div>
@@ -79,11 +87,11 @@ export default function Section1() {
             >
               <GrPrevious />
               <Typography style={"sr-only"}>back</Typography>
-            </button>
-            <button
+             </button>
+             <button
               className="text-xl active:scale-110 cursor-default md:cursor-pointer active:text-blue-600"
               onClick={() => reactSwipeEl.next()}
-            >
+             >
               <GrNext />
               <Typography style={"sr-only"}>next</Typography>
             </button>

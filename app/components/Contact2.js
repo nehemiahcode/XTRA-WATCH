@@ -16,7 +16,7 @@ export default function Contact2() {
       tag: "Phone",
       icon: <FaPhone />,
       info: "+234 819 573 7649",
-      url: "callto:+234 819 573 7649",
+      url: "tel:+234 819 573 7649",
     },
     {
       tag: "Address",
@@ -28,16 +28,16 @@ export default function Contact2() {
   return (
     <section className=" flex items-center flex-col justify-center">
       <Heading
-        style={" font-bold text-3xl text-black text-center dark:text-white"}
+        style={" font-bold text-3xl py-3 text-black text-center dark:text-white"}
       >
         Get in touch{" "}
         <span className=" text-blue-600 font-bold text-3xl">with us</span>
       </Heading>
-      <div className=" w-full px-4 my-3 lg:px-10 xl:px-16 lg:gap-3 grid gap-3 grid-cols-1 md:grid-cols-3  lg:grid-cols-3">
+      <div className=" w-full px-4 my-3 lg:px-10 xl:px-16 lg:gap-3 grid gap-7 grid-cols-1 md:grid-cols-3  lg:grid-cols-3">
         {Card.map((card, id) => (
           <div
             key={id}
-            className=" w-[90%]  sm:w-[70%] md:w-[100%] lg:w-[100%] text-center mx-auto h-[165px] bg-white dark:bg-slate-600 relative rounded-md shadow-md"
+            className=" w-[90%]  sm:w-[70%] md:w-[100%] lg:w-[100%] text-center mx-auto h-[175px] md:h-[165px] bg-white dark:bg-slate-600 relative rounded-md shadow-md"
           >
             <Heading style={" font-semibold text-2xl pt-10 text-black"}>
               {card.tag}
@@ -46,7 +46,7 @@ export default function Contact2() {
               {card.info}
             </span>
             <Link href={card.url} prefetch={false}>
-              <div className=" absolute z-[99] top-[-9px]  left-[45%] bg-blue-600 text-white rounded-full h-[50px] shadow-xl w-[50px] flex items-center justify-center">
+              <div className=" absolute z-[9] top-[-9px]  left-[43%] bg-blue-600 text-white rounded-full h-[50px] shadow-xl w-[50px] flex items-center justify-center">
                 {card.icon}
               </div>
             </Link>

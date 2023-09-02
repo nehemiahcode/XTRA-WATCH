@@ -1,6 +1,5 @@
 "use client";
-
-import { LiaAngleUpSolid } from "react-icons/lia";
+import { BsHandIndexThumb } from "react-icons/bs";
 import { useState, useEffect } from "react";
 import Ripples from "react-ripples";
 
@@ -28,9 +27,9 @@ function ScrollToTop() {
         onClick={ScrollToTop}
         className={`h-[50px]  w-[50px] ${
           visibleButton ? "hidden" : "flex"
-        } z-[999]  p-1  flex justify-center cursor-default md:cursor-pointer items-center active:hover:scale-110 rounded-full bg-blue-600 text-white  text-3xl  fixed lg:bottom-[50px] bottom-[90px] right-[20px]`}
+        } z-[999]  p-1  flex justify-center cursor-default md:cursor-pointer items-center active:hover:scale-110 rounded-full bg-blue-600 text-white  text-2xl  fixed lg:bottom-[50px] bottom-[90px] right-[20px]`}
       >
-        <LiaAngleUpSolid />
+        <BsHandIndexThumb />
       </button>
     </Ripples>
   );

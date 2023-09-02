@@ -22,16 +22,16 @@ export default function Aboutsec1() {
   return (
     <section className=" px-4 sm:px-10 md:px-10 lg:px-16">
       <div className=" grid grid-cols-1 py-4 gap-5 lg:gap-0 lg:grid-cols-2">
-        <div>
+        <div className=" sm:px-10 md:px-14 lg:p-0">
           <Heading
             style={" text-4xl font-bold pb-3 text-black dark:text-white"}
           >
             Get to know us{" "}
-            <span className=" text-blue-500 font-bold text-4xl">better</span>
+            <span className=" text-blue-500  font-bold text-4xl">better</span>
           </Heading>
           <Typography
             style={
-              " font-medium text-md  dark:text-white text-gray-800  leading-7  text-gray-700 "
+              " font-medium text-[0.98rem] md:text-base leading-loose md:leading-relaxed dark:text-white text-gray-800  leading-7  text-gray-700 "
             }
           >
             With over 27 years of experience, we have been providing exceptional
@@ -44,13 +44,13 @@ export default function Aboutsec1() {
         </div>
         <div>
           {imageindex === "1" && (
-            <ImageReveal image={MyImage1} alt={"Silver watch"} />
+            <ImageReveal image={MyImage1} alt={" Silver watch"} />
           )}
           {imageindex === "2" && (
             <ImageReveal
               image={MyImage2}
               showBanner={" hidden"}
-              alt={"Black watch"}
+              alt={" Black watch"}
             />
           )}
           {imageindex === "3" && (
@@ -70,21 +70,23 @@ export default function Aboutsec1() {
           {imageindex === "5" && (
             <ImageReveal image={MyImage5} alt={" Pink watch"} />
           )}
+          <div className=" flex items-center justify-center">
           {navigate.map((button, index) => (
             <Ripples key={index} className=" rounded-full mx-1">
               <button
                 onClick={() => setImageIndex(button.argument)}
                 type="button"
-                className={` rounded-full active:scale-110 cursor-default md:cursor-pointer h-[36px] w-[36px] ${
+                className={` rounded-full active:scale-110 cursor-default md:cursor-pointer  ${
                   imageindex === `${button.argument}`
-                    ? "bg-red-500"
-                    : "bg-blue-600"
+                    ? "bg-red-500 h-[33px] w-[33px]"
+                    : "bg-blue-600 h-[36px] w-[36px]"
                 }  text-white`}
               >
                 {button.number}
               </button>
             </Ripples>
           ))}
+          </div>
         </div>
       </div>
     </section>

@@ -22,7 +22,7 @@ export default function Section3() {
           <Heading style=" text-4xl text-white py-3 uppercase font-bold">
             XTRA For you
           </Heading>
-          <Typography style={"text-md text-white py-2 font-normal"}>
+          <Typography style={"text-[0.98rem] md:text-base leading-loose md:leading-relaxed text-white py-2 font-normal"}>
             A smartwatch is a wearable computer in the form of a watch; modern
             smartwatches provide a local touchscreen interface for daily use,
             while an associated smartphone app provides for management and

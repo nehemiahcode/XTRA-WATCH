@@ -10,14 +10,38 @@ import Typography from "./Typography";
 
 export default function Section2() {
   const Details = [
-    { icon: <SiCloudways />, heading: "Extraordinery Performance" },
-    { icon: <PiBatteryHighBold />, heading: "Excellent battery life" },
-    { icon: <ImLink />, heading: "Connectable  to android/iOS" },
+    {
+      icon: <SiCloudways />,
+      heading: "Extraordinery Performance",
+      para: "A smartwatch  that performs extraordinarily that what you have seen.",
+    },
+    {
+      icon: <PiBatteryHighBold />,
+      heading: "Excellent battery life",
+      para: "A smartwatch  with excellent battery life, long lasting, that can sustain you for a while",
+    },
+    {
+      icon: <ImLink />,
+      heading: "Connectable  to android/iOS",
+      para: "A smartwatch that can be connected either to your andriod or ios device with ease",
+    },
   ];
   const Details2 = [
-    { icon: <BsCalendarDateFill />, heading: "Shows time & date" },
-    { icon: <AiFillTags />, heading: "Affordable price" },
-    { icon: <BsSmartwatch />, heading: "Best Quality and design " },
+    {
+      icon: <BsCalendarDateFill />,
+      heading: "Shows time & date",
+      para: " A smartwatch with accurate time and date.",
+    },
+    {
+      icon: <AiFillTags />,
+      heading: "Affordable price",
+      para: " A smartwatch  that is cheap and affordable for everyone.",
+    },
+    {
+      icon: <BsSmartwatch />,
+      heading: "Best Quality and design ",
+      para: " A smartwatch that has the best quality materials and lastest designs",
+    },
   ];
   return (
     <section className=" grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 w-full py-8 h-auto px-5 sm:px-10  lg:px-16">
@@ -30,10 +54,10 @@ export default function Section2() {
             <Heading style={" font-semibold text-xl"}>{detail.heading}</Heading>
             <Typography
               style={
-                " text-md py-2  text-slate-800 dark:text-gray-300 font-medium"
+                " text-[0.98rem] md:text-base leading-loose md:leading-relaxed py-2  text-slate-800 dark:text-gray-300 font-medium"
               }
             >
-              A smartwatch is a wearable computer in the form of a watch.
+              {detail.para}
             </Typography>
           </div>
         ))}
@@ -56,7 +80,7 @@ export default function Section2() {
                 " text-md py-2 dark:text-gray-300  text-slate-800 font-medium"
               }
             >
-              A smartwatch is a wearable computer in the form of a watch.
+              {detail.para}
             </Typography>
           </div>
         ))}

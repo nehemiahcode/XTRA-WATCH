@@ -17,10 +17,10 @@ export default function Themeswitch() {
   }
 
   const toggleTheme = () => {
-    if (theme === "dark") {
-      setTheme("light");
-    } else {
+    if (theme === "light") {
       setTheme("dark");
+    } else {
+      setTheme("light");
     }
   };
 
@@ -30,7 +30,7 @@ export default function Themeswitch() {
         onClick={toggleTheme}
         className="bg-blue-500  dark:bg-slate-800  cursor-default lg:cursor-pointer dark:ring-cyan-400 focus:ring-2 ring-white ring-inset flex justify-center items-center h-[40px] w-[40px] text-xl  rounded-full"
       >
-        {theme === "dark" ? (
+        {theme === "light" ? (
           <span className="  active:rotate-[360deg]  duration-500">
             <IoIosSunny />
             <span className=" sr-only">Dark Theme</span>

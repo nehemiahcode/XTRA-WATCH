@@ -69,7 +69,7 @@ export default function Section4() {
       </Heading>
       <Typography
         style={
-          " text-center font-medium lg:w-[60%] px-5 lg:mx-auto py-2 text-md"
+          " text-center font-medium lg:w-[60%] px-5 lg:mx-auto py-2 text-[0.98rem] md:text-base leading-loose md:leading-relaxed"
         }
       >
         A smartwatch is a wearable computer in the form of a watch; modern

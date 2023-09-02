@@ -1,0 +1,14 @@
+{
+    "workbench.activityBar.iconClickBehavior": "toggle",
+    "workbench.preferredHighContrastLightColorTheme": "Default Dark Modern",
+    "workbench.iconTheme": "vs-minimal",
+    "workbench.editor.showIcons": true,
+    "screencastMode.mouseIndicatorColor": "#FF0000",
+    "workbench.preferredLightColorTheme": "Default Dark Modern",
+    "workbench.sideBar.location": "left",
+    "workbench.colorTheme": "Default Dark Modern",
+    "html.format.enable": false,
+    "css.completion.triggerPropertyValueCompletion": false,
+    "css.lint.argumentsInColorFunction": "error",
+    "reactSnippets.settings.typescript": false
+}

@@ -7,12 +7,16 @@ body {
   font-family: "poppins", "sans-serif";
   overflow-x: hidden;
   background-color: rgba(241, 245, 249, 0.904);
+  user-select: none;
+}
+
+body,html {
+  scroll-behavior: smooth;
 }
 
 .dark body {
   background-color: rgb(30 41 59);
 }
-
 
 .pl {
   display: block;
@@ -28,8 +32,6 @@ body {
 .pl__ball {
   animation-name: ball;
 }
-
-
 
 /* Animation */
 @keyframes ring {
@@ -78,17 +80,4 @@ body {
     animation-timing-function: ease-out;
     stroke-dashoffset: -163;
   }
-}
-
-
-a.link {
-  color: red;
-}
-
-.image {
-  background-image: url('../public/watch-2.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 300px;
 }

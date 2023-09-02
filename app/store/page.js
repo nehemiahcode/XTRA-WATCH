@@ -1,6 +1,8 @@
 "use client";
 import { useEffect } from "react";
 import Container from "../components/layout/Container";
+import Section4 from "../components/Section4";
+import Tab from "../components/Tabs";
 
 function Store() {
   useEffect(() => {
@@ -8,7 +10,8 @@ function Store() {
   }, []);
   return (
     <Container>
-      <div>page</div>
+     <Tab/>
+     <Section4/>
     </Container>
   );
 }

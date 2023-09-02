@@ -4,7 +4,7 @@ import Heading from "./Heading";
 import { CgSpinner } from "react-icons/cg";
 import Image from "next/image";
 
-export function ImageReveal({ image, showBanner, alt }) {
+export function ImageReveal({ image, showBanner, alt, quotes }) {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     const Timer = setTimeout(() => {
@@ -15,21 +15,25 @@ export function ImageReveal({ image, showBanner, alt }) {
   return (
     <>
       {loading ? (
-        <div className={" w-full h-[250px] flex animate-spin text-2xl items-center justify-center"}>
-          <CgSpinner />
+        <div className={"flex flex-col  py-28  items-center justify-center"}>
+          <span className="animate-spin text-2xl">
+            <CgSpinner />
+          </span>
+          <span>updating...</span>
         </div>
       ) : (
         <>
-          <div className="  h-auto flex items-center relative justify-center lg:justify-center md:justify-start ">
+          <div className="  h-auto flex items-center flex-col relative justify-center lg:justify-center md:justify-start ">
+            <div className=" font-medium text-lg text-blue-500 dark:text-white">{quotes}</div>
             <Suspense fallback={<CgSpinner />}>
               <Image
                 src={image}
-                alt={`about image pictures` + `${alt}`}
+                alt={`about image pictures of ` + `${alt}`}
                 className=" object-contain h-[350px] w-auto"
               />
             </Suspense>
             <div
-              className={`${showBanner} absolute top-3 left-[5rem] sm:left-[7rem] bg-blue-600 shadow-lg flex items-center justify-center rounded-full h-[70px] w-[70px] `}
+              className={`${showBanner} absolute top-3 left-[6rem] sm:left-[7rem] md:left-[14rem] lg:left-[10rem] bg-blue-600 shadow-lg flex items-center justify-center rounded-full h-[70px] w-[70px] `}
             >
               <Heading
                 style={
