@@ -37,12 +37,12 @@ export default function Section1() {
               " text-3xl leading-relaxed md:text-4xl font-bold py-3 lg:py-5"
             }
           >
-            Skip the impossile
+            Skip the impossible 
           </Heading>
           <Heading
             style={" text-2xl lg:text-5xl  py-3 font-medium lg:py-4 py-2"}
           >
-            Extraordinery
+            Extraordinary 
           </Heading>
           <Heading style={" text-4xl lg:text-7xl py-3 font-bold lg:py-4 "}>
             Performance
